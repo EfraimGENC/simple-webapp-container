@@ -12,5 +12,13 @@ docker build -t simple-web-app .
 
 Run the container using the following command:
 ```shell
-docker run -d -p 8000:8000 simple-web-app
+docker run --name simple-web-app -d -p 8000:8000 simple-web-app
+```
+
+### With Docker Compose
+
+You can use the docker-compose file to build and run the container using the following command:
+
+```shell
+docker compose up --build -d  
 ```

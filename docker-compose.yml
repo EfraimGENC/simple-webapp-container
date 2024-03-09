@@ -1,0 +1,8 @@
+services:
+  simple-web-app:
+    image: simple-web-app
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "8000:8000"
